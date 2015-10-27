@@ -6,6 +6,9 @@
 
 $(document).ready(function() {
 
+    // tabs
+    $("#tabs").tabs();
+
     // when Cel is entered
     $("#celsius").on("keyup",function() {
         var cel = $('input#celsius').val();
