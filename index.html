@@ -21,6 +21,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/menustyles.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -35,17 +36,22 @@
     <div class="row">
       <div class="u-full-width" style="margin-top: 15%; border: thin dashed #33C3F0; padding: 2%">
 
-        <h2>International Convert</h2>
+        <h2 style="text-align: center">International Convert</h2>
 
-
-        <div id="tabs">
+        <div id='cssmenu'>
           <ul>
-            <li><a href="#tabs-1">Distance</a></li>
-            <li><a href="#tabs-2">Temperature</a></li>
-            <li><a href="#tabs-3">Coming Soon</a></li>
+            <li class='active'><a href='#' id="dis"><span>Distance</span></a></li>
+            <li><a href='#' id="temp"><span>Temperature</span></a></li>
+            <li><a href='#' id="soon"><span>Coming Soon</span></a></li>
           </ul>
-          <div id="tabs-1">
-            <h2>Distance</h2>
+        </div>
+
+
+
+
+
+          <div id="dis-tab">
+
             <form>
               <div class="row">
                 <div class="four columns offset-by-three">
@@ -61,8 +67,8 @@
 
           </div>
 
-          <div id="tabs-2">
-            <h2>Temperature</h2>
+          <div id="temp-tab">
+
             <form>
               <div class="row">
                 <div class="four columns offset-by-three">
@@ -78,13 +84,16 @@
 
           </div>
 
-          <div id="tabs-3">
+          <div id="soon-tab">
 
+
+            <div style="text-align: center">
             <h2>Coming soon</h2>
-
-
+              Comments/Suggestions?<br />
+              <a href="mailto:lori@dkdevs.com">lori@dkdevs.com</a>
+            </div>
           </div>
-        </div>
+
 
 
 
@@ -95,8 +104,7 @@
 <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="scripts/jquery-1.11.3.min.js"></script>
-  <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
-  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script src="scripts/menuscript.js"></script>
   <script src="scripts/script.js"></script>
 </body>
 </html>

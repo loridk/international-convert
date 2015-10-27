@@ -5,35 +5,7 @@
 // assert if 500 mi is entered
 
 $(document).ready(function() {
-    $("#dis-tab").hide();
-    $("#temp-tab").hide();
-    $("#soon-tab").hide();
-
-
-    $( "#dis" ).on( "click", function( event ) {
-        // Prevent the usual navigation behavior
-        event.preventDefault();
-        $("#dis-tab").show();
-        $("#temp-tab").hide();
-        $("#soon-tab").hide();
-    });
-
-    $( "#temp" ).on( "click", function( event ) {
-        // Prevent the usual navigation behavior
-        event.preventDefault();
-        $("#temp-tab").show();
-        $("#dis-tab").hide();
-        $("#soon-tab").hide();
-    });
-
-    $( "#soon" ).on( "click", function( event ) {
-        // Prevent the usual navigation behavior
-        event.preventDefault();
-        $("#soon-tab").show();
-        $("#dis-tab").hide();
-        $("#temp-tab").hide();
-    });
-
+    
 
     // when Cel is entered
     $("#celsius").on("keyup",function() {
