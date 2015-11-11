@@ -392,6 +392,13 @@ hr {
   clear: both; }
 
 
+.license {
+  text-align: center;
+  margin-top: 5%;
+  font-size: .75em;
+}
+
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
