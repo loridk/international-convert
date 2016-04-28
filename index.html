@@ -19,9 +19,7 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/menustyles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cerulean/bootstrap.min.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -34,54 +32,132 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
-      <div class="u-full-width" style="margin-top: 15%; border: thin dashed #33C3F0; padding: 2%">
-
-        <h2 style="text-align: center">International Convert</h2>
-
-        <div id='cssmenu'>
-          <ul>
-            <li class='active'><a href='#' id="dis"><span>Distance</span></a></li>
-            <li><a href='#' id="temp"><span>Temperature</span></a></li>
-            <li><a href='#' id="soon"><span>Coming Soon</span></a></li>
-          </ul>
-        </div>
+      <div class="u-full-width" style="margin-top: 15%;  padding: 2%">
 
 
+
+          <div class="navbar navbar-default navbar-fixed-top">
+                  <div class="navbar-header">
+                      <a href="#" class="navbar-brand">International Convert</a>
+                      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                  </div>
+                  <div class="navbar-collapse collapse" id="navbar-main">
+                      <ul class="nav navbar-nav">
+                          <li><a href='#' id="dis"><span>Distance</span></a></li>
+                          <li><a href='#' id="temp"><span>Temperature</span></a></li>
+                          <li><a href='#' id="weight"><span>Weight</span></a></li>
+                          <li><a href='#' id="soon"><span>Coming Soon</span></a></li>
+                      </ul>
+
+                      <ul class="nav navbar-nav navbar-right">
+                          <li>
+                              <a href="http://dkdevs.com" target="_blank">DK Devs</a>
+                          </li>
+                          <li>
+                              <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="images/cc.png" /></a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+
+        <h2>International Convert</h2>
 
 
 
           <div id="dis-tab">
 
-            <form>
+              <hr>
+
+            <div class="row">
+              <form>
+                  <div class="form-group">
+                    <div class="col-sm-4 col-sm-offset-3">
+                      <label>Kilometers (Km)<br />
+                        <input type="number" step="any" id="kilometers" placeholder="0"/></label>
+                    </div>
+                    <div class="col-sm-4">
+                      <label>Miles (Mi)<br />
+                        <input type="number" step="any" id="miles" placeholder="0" /></label>
+                    </div>
+                </div>
+              </form>
+            </div>
+
+              <hr>
+
               <div class="row">
-                <div class="four columns offset-by-three">
-                  <label>Kilometers<br />
-                    <input type="text" id="kilometers" placeholder="0"/></label>
-                </div>
-                <div class="four columns">
-                  <label>Miles<br />
-                    <input type="text" id="miles" placeholder="0" /></label>
-                </div>
+                  <form>
+                      <div class="form-group">
+                          <div class="col-sm-4 col-sm-offset-3">
+                              <label>Centemeters (Cm)<br />
+                                  <input type="number" step="any" id="centemeters" placeholder="0"/></label>
+                          </div>
+                          <div class="col-sm-4">
+                              <label>Inches (In)<br />
+                                  <input type="number" step="any" id="inches" placeholder="0" /></label>
+                          </div>
+                      </div>
+                  </form>
               </div>
-            </form>
+
+              <hr>
+
+              <div class="row">
+                  <form>
+                      <div class="form-group">
+                          <div class="col-sm-4 col-sm-offset-3">
+                              <label>Meters (M)<br />
+                                  <input type="number" step="any" id="meters" placeholder="0"/></label>
+                          </div>
+                          <div class="col-sm-4">
+                              <label>Feet (Ft)<br />
+                                  <input type="number" step="any" id="feet" placeholder="0" /></label>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+
+              <hr>
 
           </div>
 
           <div id="temp-tab">
 
-            <form>
-              <div class="row">
-                <div class="four columns offset-by-three">
-                  <label>Degrees Celsius
-                    <input type="text" id="celsius" placeholder="0"/></label>
-                </div>
-                <div class="four columns">
-                  <label>Degrees Fahrenheit
-                    <input type="text" id="fahrenheit" placeholder="0" /></label>
-                </div>
-              </div>
-            </form>
+              <hr>
 
+            <div class="row">
+              <form>
+                  <div class="form-group">
+                    <div class="col-sm-4 col-sm-offset-3">
+                      <label>Degrees Celsius (C&deg;)<br>
+                        <input type="number" step="any" id="celsius" placeholder="0"/></label>
+                    </div>
+                    <div class="col-sm-4">
+                      <label>Degrees Fahrenheit (F&deg;)<br>
+                        <input type="number" step="any" id="fahrenheit" placeholder="0" /></label>
+                    </div>
+                  </div>
+              </form>
+            </div>
+
+              <hr>
+
+          </div>
+
+          <div id="weight-tab">
+
+
+              <div style="text-align: center">
+                  <h2>Coming soon</h2>
+                  Comments/Suggestions?<br />
+                  <a href="mailto:lori@dkdevs.com">lori@dkdevs.com</a>
+              </div>
           </div>
 
           <div id="soon-tab">
@@ -95,13 +171,9 @@
           </div>
 
 
-<div class="license">
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="images/cc.png" /></a>
-  <br /><a xmlns:cc="http://creativecommons.org/ns#" href="http://dkdevs.com" property="cc:attributionName" rel="cc:attributionURL">Lori Dunford</a>
-</div>
       </div>
     </div>
-  </div>
+
 
 <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
